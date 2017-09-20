@@ -17,6 +17,12 @@ img.verif_img {
 
 /********** Global **********/
 
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  }
+
 body {
 	background: url(../images/handmadepaper.png);
 }
@@ -110,6 +116,37 @@ iframe {
 	margin: 0 auto;
 }
 
+.col-1 {
+	float: left;
+	width: 32%;
+}
+
+.col-2 {
+	float: left;
+	width: 66%;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+  }
+
+[class*="col-"] {
+  margin-left: 2%;
+}
+
+.first {
+	margin-left: 0%;
+  }
+
+.margin-contain {
+	margin-bottom: 20px;
+}
+
 .shadow {
 	box-shadow: 0 3px 10px #333;
 }
@@ -118,7 +155,7 @@ iframe {
 	font: bold 42px 'Elsie Swash Caps', cursive;
 	color: white;
 	text-shadow: 0 2px 3px #000;
-	margin: 0 0 10px;
+	margin: 20px 0 10px;
 }
 
 .border_right {
